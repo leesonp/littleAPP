@@ -1,0 +1,3 @@
+/* modelTest.wxss */
+@import '../../model/model.wxss'
+

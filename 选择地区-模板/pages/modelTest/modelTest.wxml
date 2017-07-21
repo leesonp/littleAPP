@@ -1,0 +1,5 @@
+<!--modelTest.wxml-->
+<import src="../../model/model.wxml"/>
+<view class="infoText">{{province}} {{city}} {{county}}</view>
+<button class="animation-button" bindtap="translate">选择城市</button>
+<template is="areaData" data="{{...item}}"/>
