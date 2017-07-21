@@ -1,5 +1,7 @@
 //index.js
 //获取应用实例
+// var app = getApp()
+// var util = require('../../utils/util.js')
 var area = require('../../utils/area.js')
 
 var areaInfo = [];//所有省市区县数据
@@ -29,7 +31,7 @@ Page({
   //滑动事件
   bindChange: function (e) {
     var val = e.detail.value
-
+    // console.log(e)
     //判断滑动的是第几个column
     //若省份column做了滑动则定位到地级市和区县第一位
     if (index[0] != val[0]) {
@@ -101,7 +103,8 @@ Page({
     
   },
   //隐藏弹窗浮层
-  hiddenFloatView(){
+  hiddenFloatView(e){
+    console.log(e);
     moveY = 200;
     show = true;
     t = 0;
@@ -111,6 +114,11 @@ Page({
   //页面滑至底部事件
   onReachBottom: function () {
     // Do something when page reach bottom.
+  },
+  tiaozhuan(){
+    wx.navigateTo({
+      url: '../../pages/modelTest/modelTest',
+    })
   }
 })
 

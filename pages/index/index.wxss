@@ -50,9 +50,11 @@ picker-view-column view{
 }
 
 .animation-button {
+  margin-top: 20rpx;
   top:20rpx;
-  width: 290rpx;
-  height: 100rpx;  
+  width: 400rpx;
+  height: 100rpx; 
+  line-height: 100rpx; 
   align-items:center;
 }
 
