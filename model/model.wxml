@@ -12,7 +12,7 @@
   <view class="animation-element-wrapper" animation="{{animation}}" style="visibility:{{show ? 'visible':'hidden'}}" bindtap="hiddenFloatView" data-id="444">
      <view class="animation-element" catchtap="nono">
         <text class="left-bt" catchtap="hiddenFloatView" data-id="555">取消</text>
-        <text class="right-bt" catchtap="hiddenFloatView" data-id="666">确定</text>
+        <text class="right-bt" catchtap="hiddenFloatViewOk" data-id="666">确定</text>
           <view class="line"></view> 
 
         <picker-view indicator-style = "height: 50rpx;" value="{{value}}" bindchange="bindChange" catchtap="nono">
