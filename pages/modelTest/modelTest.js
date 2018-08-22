@@ -4,6 +4,7 @@ var model = require('../../model/model.js')
 var show = false;
 var item = {};
 
+
 Page({
   data: {
     item: {
@@ -23,17 +24,19 @@ Page({
   //隐藏picker-view
   hiddenFloatView: function (e) {
     model.animationEvents(this, 200, false,400);
-    this.bindChange(null);
   },
-  //滑动事件
-  bindChange: function (e) {
-    model.updateAreaData(this, 1, e);
+  hiddenFloatViewOk: function (e) {
+    model.animationEvents(this, 200, false, 400);
     item = this.data.item;
     this.setData({
       province: item.provinces[item.value[0]].name,
       city: item.citys[item.value[1]].name,
       county: item.countys[item.value[2]].name
     });
+  },
+  //滑动事件
+  bindChange: function (e) {
+    model.updateAreaData(this, 1, e);
   },
   onReachBottom: function (){
   },
