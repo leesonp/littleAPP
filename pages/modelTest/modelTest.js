@@ -23,6 +23,7 @@ Page({
   //隐藏picker-view
   hiddenFloatView: function (e) {
     model.animationEvents(this, 200, false,400);
+    this.bindChange(null);
   },
   //滑动事件
   bindChange: function (e) {

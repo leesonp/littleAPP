@@ -83,7 +83,7 @@ function updateAreaData( that, status, e){
     
     //滑动事件
     var valueChange = function(e,that){
-      var val = e.detail.value
+      var val = e == null ? [0, 0, 0] : e.detail.value
        console.log(e)
       //判断滑动的是第几个column
       //若省份column做了滑动则定位到地级市和区县第一位
